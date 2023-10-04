@@ -1,4 +1,6 @@
-lugin Name: Impresiónes
+<?php
+/*
+Plugin Name: Impresiónes
 Plugin URL: boletos.site
 Description: Super plugin de registro e impresión locoshon
 Version: 0.0.1
