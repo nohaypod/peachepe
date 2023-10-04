@@ -1,0 +1,42 @@
+lugin Name: Impresiónes
+Plugin URL: boletos.site
+Description: Super plugin de registro e impresión locoshon
+Version: 0.0.1
+*/
+
+function Activarrr(){}
+function Desactivarrr(){
+    flush_rewrite_rules();
+}
+
+
+register_activation_hook(__FILE__,'Activarrr');
+register_deactivation_hook(__FILE__,'Desactivarrr');
+add_action('admin_menu', 'CrearMenu1');
+
+add_action('admin_menu', 'CrearMenu2');
+
+function CrearMenu2(){
+    add_menu_page(
+        'Dashboard Registro', // Título página
+        'Impresión', // Título menu
+        'manage_options', // Capability
+        plugin_dir_path(__FILE__).'admin/lista_encuestas_0.php', // slug
+        null, // Funcion de contenido
+        ,
+        '7'
+    );
+   //add_submenu_page(
+   //    "sp_menu", // parent slug
+   //    "Ajustes", // Título Pagina
+   //    "Ajustes", // Titulo manu
+   //    "manage_options",
+   //    "sp_menu_ajustes",
+   //    "Submenu1"
+
+   //);
+};
+
+function MostrarContenido2(){
+    echo "<h1>Contenido Locoshon</h1>";
+}
