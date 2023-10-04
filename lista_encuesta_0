@@ -13,7 +13,7 @@
 
     <table class="wp-list-table widefat fixed striped pages">
         <thead>
-            <th >Nombre de muchos algos</th>
+            <th >Nombre</th>
             <th >Shortcode</th>
             <th >Acciones</th>
         </thead>
