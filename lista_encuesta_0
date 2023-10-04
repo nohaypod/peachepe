@@ -1,4 +1,11 @@
 <?php
+/*
+Plugin Name: Registraishon de impresión
+Plugin URL: htttps//boletos.site
+Description: Super plugin de registro e impresión locoshon
+Version: 0.0.1
+*/
+
     global $wpdb;
     $query ="SELECT * FROM `wp_postmeta` WHERE `meta_key` LIKE '_tribe_rsvp_full_name';";
     $lista = $wpdb->get_results($query,ARRAY_A);
